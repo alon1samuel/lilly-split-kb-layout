@@ -17,13 +17,13 @@
 // ------------------------------------------------------------------------------------------------------------
 // |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   +   |
 // |  TAB  |  @  |  <  |  >   |  P   |  Y   |                   |  F   |  G    |  C    |  R   |   L   |   '   |
-// | SHIFT |  A  |  O  |  U   |  E   |  I   |                   |  D   |  H    |  T    |  N   |   S   | SHIFT |
+// | SHIFT |  A  |  O  |  E   |  U   |  I   |                   |  D   |  H    |  T    |  N   |   S   | SHIFT |
 // |  CTRL |  :  |  Q  |  J   |  K   |  X   |   "["  |  |  "]"  |  B   |  M    |  W    |  V   |   Z   |  CTRL |
 //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 			bindings = <
 &kp ESC   &kp N1     &kp N2 &kp N3   &kp N4   &kp N5                     &kp N6 &kp N7   &kp N8    &kp N9  &kp N0   &kp KP_PLUS
 &kp TAB   &kp AT     &kp LT &kp GT   &kp P    &kp Y                      &kp F  &kp G    &kp C     &kp R   &kp L    &kp SQT
-&kp LSHFT &kp A      &kp O  &kp U    &kp E    &kp I                      &kp D  &kp H    &kp T     &kp N   &kp S    &kp RSHFT
+&kp LSHFT &kp A      &kp O  &kp E    &kp U    &kp I                      &kp D  &kp H    &kp T     &kp N   &kp S    &kp RSHFT
 &kp LCTRL &kp COLON  &kp Q  &kp J    &kp K    &kp X  &kp LBKT   &kp RBKT &kp B  &kp M    &kp W     &kp V   &kp Z    &kp LCTRL
                 			&kp LALT &kp LGUI &mo 1  &kp SPACE  &kp RET  &mo 2  &kp BSPC &kp RGUI
 			>;
