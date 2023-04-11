@@ -35,14 +35,14 @@
 // ------------------------------------------------------------------------------------------------------------
 // | BTCLR 	| BT1 	| BT2 |  BT3 |  BT4 |  BT5 	|                   |      |       |       |      |       |       |
 // |     	|   	|  N2 |  N3  |  N4  |  N5  	|                   |  N6  |  N7   |  N8   |  N9  |       |       |
-// |  		|  N1  	| DEL |  /   |  '   |  		|                   |  \   |  -    |  ;    |  =   |  N10  |       |
-// | 		| on 	| off |  \   |  <   |  >   	|        |  |       |      |       |       |  [   |  ]    |  	  |
+// |  		|  N1  	| 	  |  /   |  '   |  		|                   |  \   |  -    |  ;    |  =   |  N10  |       |
+// | 		| on 	| DEL |  \   |  <   |  >   	|        |  |       |      |       |       |  [   |  ]    |  	  |
 //                  	  |      |      |      	|        |  |       |      |       |       |
 			bindings = <
 &bt BT_CLR 	&bt BT_SEL 0     	&bt BT_SEL 1      	&bt BT_SEL 2      	&bt BT_SEL 3 	&bt BT_SEL 4                 		&trans    	&trans    	&trans		&trans    	&trans    	&trans
 &trans 		&trans           	&kp N2            	&kp N3            	&kp N4       	&kp N5                       		&kp N6     	&kp N7    	&kp N8		&kp N9   	&trans  	&trans
-&trans   	&kp N1 				&kp DEL 			&kp FSLH          	&kp SQT 		&trans  							&kp NUBS 	&kp MINUS 	&kp SEMI 	&kp EQUAL  	&kp N0  	&trans
-&trans  	&ext_power EP_ON 	&ext_power EP_OFF	&kp BSLH 			&kp LT 	 		&kp GT    		&trans  &trans    	&trans 		&trans 		&trans   	&kp LBKT 	&kp RBKT  	&trans
+&trans   	&kp N1 				&trans 			&kp FSLH          	&kp SQT 		&trans  							&kp NUBS 	&kp MINUS 	&kp SEMI 	&kp EQUAL  	&kp N0  	&trans
+&trans  	&ext_power EP_ON 	&kp DEL 			&kp BSLH 			&kp LT 	 		&kp GT    		&trans  &trans    	&trans 		&trans 		&trans   	&kp LBKT 	&kp RBKT  	&trans
                                 &trans            	&trans       		&trans    		&trans   		&trans	&trans    	&trans    	&trans
 			>;
 
@@ -53,14 +53,14 @@
 // ------------------------------------------------------------------------------------------------------------
 // |   		   |     	|     	|      		| VOL_UP| VOL_DN	|                   |      	|       |       |      	|       |      	|
 // |   `	   |     	|  F3 	|  F4  		|  F5  	|  F6  		|                   |  F7  	|   F8 	|   ^  	| F9  	|       |      	|
-// |  		   |  F1 	|  F2	| DEL  		|  HOME	| Page Up 	|                 	| `		|   <- 	|   v   |  ->  	|  F10  | 		|
-// |           | CAPS	| 	   	| P_SCRN	|  END	| Page Down	|   	 |  |       |      	|       |       |  F12 	|  F11  |      	|
+// |  		   |  F1 	|  F2	|   		|  HOME	| Page Up 	|                 	| `		|   <- 	|   v   |  ->  	|  F10  | 		|
+// |           | CAPS	|  DEL 	| P_SCRN	|  END	| Page Down	|   	 |  |       |      	|       |       |  F12 	|  F11  |      	|
 //                 	       		|      		|      	|      		|   	 |  |       | 	   	| 	   	| 	   	|  	   	  		   
 			bindings = <
 &trans 		&trans  	&trans  	&trans 		&kp K_VOL_DN 	&kp K_VOL_UP 	               	&trans      &trans    	&trans    	&trans   	&trans    	&trans
 &trans  	&trans  	&kp F3 		&kp F4  	&kp F5  		&kp F6                       	&kp F7      &kp F8    	&kp UP    	&kp F9   	&trans 		&trans
-&trans 		&kp F1 		&kp F2		&kp DEL 	&kp HOME		&kp PG_UP  						&kp GRAVE  	&kp LEFT  	&kp DOWN   	&kp RIGHT 	&kp F10		&trans
-&trans 		&kp CAPS	&trans 	  	&kp PSCRN 	&kp END 		&kp PG_DN 	&trans   &trans    	&trans  	&trans		&trans 		&kp F12		&kp F11		&trans
+&trans 		&kp F1 		&kp F2		&trans	 	&kp HOME		&kp PG_UP  						&kp GRAVE  	&kp LEFT  	&kp DOWN   	&kp RIGHT 	&kp F10		&trans
+&trans 		&kp CAPS	&kp DEL	  	&kp PSCRN 	&kp END 		&kp PG_DN 	&trans   &trans    	&trans  	&trans		&trans 		&kp F12		&kp F11		&trans
                         			&trans  	&trans  		&trans   	&trans   &trans    	&trans      &trans    	&trans
 			>;
 
